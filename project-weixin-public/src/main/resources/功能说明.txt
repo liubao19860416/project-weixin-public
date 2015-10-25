@@ -1,0 +1,26 @@
+实现功能如下:
+1.关键字自定义回复TextRespMsg信息:
+	a.天气预报服务查询
+	b.电话号码查询
+	c.商品比价信息查询
+	d.QQ吉凶运程预测
+2.关注事件后,自动回复NewsRespMsg图文消息
+
+3.地理位置消息,及微信中的发送地理位置消息,回复图文消息
+
+4.菜单创建
+
+5.菜单点击Click事件
+
+6.菜单点击View事件
+
+
+
+网址信息:
+阿里:
+http://wasabili.aliapp.com/weixin2
+新浪:
+http://1.wasabili1.sinaapp.com/weixin2
+百度:
+http://wasabili0.duapp.com/weixin2
+

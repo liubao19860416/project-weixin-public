@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>微信Servlet实现项目</display-name>
+
+	<!-- 核心的Servlet1 -->
+	<servlet>
+		<servlet-name>CoreServlet</servlet-name>
+		<servlet-class>com.zxytech.servlet.CoreServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CoreServlet</servlet-name>
+		<url-pattern>/weixin</url-pattern>
+	</servlet-mapping>
+
+	<!-- 核心的Servlet2 -->
+	<servlet>
+		<servlet-name>CoreServlet2</servlet-name>
+		<servlet-class>org.easywechat.servlet.WeixinServletSupport</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CoreServlet2</servlet-name>
+		<url-pattern>/weixin2</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 获取token的Servlet -->
+	<servlet>
+		<servlet-name>AccessTokenServlet</servlet-name>
+		<servlet-class>org.easywechat.servlet.AccessTokenServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AccessTokenServlet</servlet-name>
+		<url-pattern>/getToken</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 初始化菜单的servlet -->
+	<servlet>
+		<servlet-name>InitMenuServlet</servlet-name>
+		<servlet-class >org.easywechat.servlet.InitMenuServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InitMenuServlet</servlet-name>
+		<url-pattern>/initMenu</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 授权的servlet -->
+	<servlet>
+		<servlet-name>OAuthServlet</servlet-name>
+		<servlet-class >org.easywechat.servlet.OAuthServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>OAuthServlet</servlet-name>
+		<url-pattern>/oauth</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+</web-app>

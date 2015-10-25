@@ -1,0 +1,38 @@
+package com.zxytech.message.req;
+
+/**
+ * 链接格式请求数据实体
+ * 
+ * @author Liubao
+ * @2015年7月10日
+ * 
+ */
+public class LinkReqMessage extends BaseReqMessage {
+    private String Title;
+    private String Description;
+    private String Url;
+
+    public String getTitle() {
+        return this.Title;
+    }
+
+    public void setTitle(String title) {
+        this.Title = title;
+    }
+
+    public String getDescription() {
+        return this.Description;
+    }
+
+    public void setDescription(String description) {
+        this.Description = description;
+    }
+
+    public String getUrl() {
+        return this.Url;
+    }
+
+    public void setUrl(String url) {
+        this.Url = url;
+    }
+}
